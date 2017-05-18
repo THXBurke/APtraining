@@ -21,3 +21,17 @@ var myTextInput = document.getElementById('myTextInput');
 myButton.addEventListener('click', function() {
   interactiveHeading.style.color = myTextInput.value;
 });
+//////
+//////Select all elements of a certain type
+var interactiveHeading = document.getElementsByTagName('h1')[0];
+
+var myList = document.getElementsByTagName('li');
+  for (var i = 0; i < myList.length; i +=1) {
+  myList[i].style.color = 'green';
+    document.write("<br>" + myList[i]);
+}
+
+var myList = document.getElementsByTagName('li');
+  for(var i = 0; i < myList.length; i += 1) {
+    document.write(myList[i]);
+  }
