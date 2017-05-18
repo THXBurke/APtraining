@@ -21,17 +21,18 @@ var myTextInput = document.getElementById('myTextInput');
 myButton.addEventListener('click', function() {
   interactiveHeading.style.color = myTextInput.value;
 });
-//////
+
 //////Select all elements of a certain type
-var interactiveHeading = document.getElementsByTagName('h1')[0];
+// var interactiveHeading = document.getElementsByTagName('h1')[0];
 
 var myList = document.getElementsByTagName('li');
   for (var i = 0; i < myList.length; i +=1) {
   myList[i].style.color = 'green';
-    document.write("<br>" + myList[i]);
 }
 
-var myList = document.getElementsByTagName('li');
-  for(var i = 0; i < myList.length; i += 1) {
-    document.write(myList[i]);
+//using CSS Queries to Select Page elements. Can switch (even to odd).
+//also ex: of using const & let keywords in place of var
+const evens = document.querySelectorAll('li:nth-child(even)');
+  for (let i = 0; i < evens.length; i += 1) {
+    evens[i].style.backgroundColor = 'lightgray';
   }
