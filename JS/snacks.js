@@ -5,5 +5,7 @@ snacks.push('pistachios');
 snacks.push('avocados', 'tomatoes', 'chips');
 //add to the front of the list with using the toUpperCase method
 snacks.unshift('coffee'.toUpperCase());
+
+snacks.pop();
 //calling the function from day2app.js
 printList(snacks);
